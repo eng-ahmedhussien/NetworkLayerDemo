@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B0915EA2C0C5FED0000C1DA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915E92C0C5FED0000C1DA /* NetworkService.swift */; };
+		6B0915EC2C0C60650000C1DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */; };
+		6B0915EE2C0C60AE0000C1DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915ED2C0C60AE0000C1DA /* UserModel.swift */; };
+		6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F12C0C90D60000C1DA /* GNetworkService.swift */; };
+		6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */; };
 		6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */; };
 		6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6972C08B22100D6DF1F /* ContentView.swift */; };
 		6B6BC69A2C08B22300D6DF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6BC6992C08B22300D6DF1F /* Assets.xcassets */; };
@@ -14,6 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B0915E92C0C5FED0000C1DA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6B0915ED2C0C60AE0000C1DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		6B0915F12C0C90D60000C1DA /* GNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNetworkService.swift; sourceTree = "<group>"; };
+		6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHomeViewModel.swift; sourceTree = "<group>"; };
 		6B6BC6922C08B22100D6DF1F /* NetworkLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerDemoApp.swift; sourceTree = "<group>"; };
 		6B6BC6972C08B22100D6DF1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +42,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0915EF2C0C837A0000C1DA /* SimpleNetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6B0915E92C0C5FED0000C1DA /* NetworkService.swift */,
+				6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */,
+			);
+			path = SimpleNetworkLayer;
+			sourceTree = "<group>";
+		};
+		6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				6B0915F12C0C90D60000C1DA /* GNetworkService.swift */,
+				6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */,
+			);
+			path = GenaricNetworkLayer;
+			sourceTree = "<group>";
+		};
 		6B6BC6892C08B22100D6DF1F = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +81,9 @@
 			children = (
 				6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */,
 				6B6BC6972C08B22100D6DF1F /* ContentView.swift */,
+				6B0915ED2C0C60AE0000C1DA /* UserModel.swift */,
+				6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */,
+				6B0915EF2C0C837A0000C1DA /* SimpleNetworkLayer */,
 				6B6BC6992C08B22300D6DF1F /* Assets.xcassets */,
 				6B6BC69B2C08B22300D6DF1F /* Preview Content */,
 			);
@@ -138,7 +169,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */,
+				6B0915EA2C0C5FED0000C1DA /* NetworkService.swift in Sources */,
+				6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */,
+				6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */,
 				6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */,
+				6B0915EE2C0C60AE0000C1DA /* UserModel.swift in Sources */,
+				6B0915EC2C0C60650000C1DA /* HomeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
