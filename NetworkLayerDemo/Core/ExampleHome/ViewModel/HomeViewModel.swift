@@ -1,5 +1,5 @@
 //
-//  GHomeViewModel.swift
+//  HomeViewModel.swift
 //  NetworkLayerDemo
 //
 //  Created by ahmed hussien on 02/06/2024.
@@ -9,21 +9,22 @@ import Foundation
 import SwiftUI
 import Combine
 
-class GHomeViewModel:ObservableObject{
+//MARK: - VM
 
+class HomeViewModel:ObservableObject{
+    
     @Published var users : [UserModel]?
     private var  cancellable = Set<AnyCancellable>()
-    private var networkService : GNetworkServiceProtocol
-    private var url = "https://api.github.com/users"
+    private var apiClient : HomeAPIClientProtocol
     
     
-    init(networkService:GNetworkServiceProtocol = GNetworkService()){
-        self.networkService = networkService
+    init(apiClient:HomeAPIClientProtocol = HomeAPIClient()){
+        self.apiClient = apiClient
     }
     
-    
     func fetchDataByPublisher() {
-        networkService.getDataByPublisher(modelType: UserModel.self,url:url)
+        apiClient.getUsers()
+           .receive(on: RunLoop.main)
             .sink { completion in
                 switch completion {
                 case .finished:
@@ -35,10 +36,17 @@ class GHomeViewModel:ObservableObject{
                 self.users = data
             }
             .store(in: &cancellable)
+        }
+    
+    func fetchDataByAsync() async {
+        let users = try? await apiClient.getUsers()
+        await MainActor.run{
+            self.users = users
+        }
     }
     
     func fetchDataByCompletion() {
-        networkService.getDataByCompletion(modelType: UserModel.self,url:url) { data, error in
+        apiClient.getUser { data, error in
             if let data = data {
                 self.users = data
             } else if let error = error {
@@ -47,13 +55,8 @@ class GHomeViewModel:ObservableObject{
             }
         }
     }
+    
   
-    func fetchDataByAsync() async{
-       let users = try? await networkService.getDataByAsync(modelType: UserModel.self, url: url)
-       await MainActor.run{
-           self.users = users
-       }
-    }
-        
+    
+ 
 }
-

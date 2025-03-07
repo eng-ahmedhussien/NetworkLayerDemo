@@ -7,28 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B0915EA2C0C5FED0000C1DA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915E92C0C5FED0000C1DA /* NetworkService.swift */; };
 		6B0915EC2C0C60650000C1DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */; };
 		6B0915EE2C0C60AE0000C1DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915ED2C0C60AE0000C1DA /* UserModel.swift */; };
 		6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F12C0C90D60000C1DA /* GNetworkService.swift */; };
 		6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */; };
+		6B1CDF2B2D787CE5001411E0 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */; };
 		6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */; };
 		6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6972C08B22100D6DF1F /* ContentView.swift */; };
 		6B6BC69A2C08B22300D6DF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6BC6992C08B22300D6DF1F /* Assets.xcassets */; };
 		6B6BC69D2C08B22300D6DF1F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B6BC69C2C08B22300D6DF1F /* Preview Assets.xcassets */; };
+		6BFA128C2D7B150F004D0F2C /* APIModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA128B2D7B150F004D0F2C /* APIModels.swift */; };
+		6BFA128E2D7B163A004D0F2C /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA128D2D7B163A004D0F2C /* APIClientProtocol.swift */; };
+		6BFA12932D7B1C44004D0F2C /* HomeEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA12922D7B1C44004D0F2C /* HomeEndpoints.swift */; };
+		6BFA12952D7B1CE1004D0F2C /* HomeAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BFA12942D7B1CE1004D0F2C /* HomeAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B0915E92C0C5FED0000C1DA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6B0915ED2C0C60AE0000C1DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		6B0915F12C0C90D60000C1DA /* GNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNetworkService.swift; sourceTree = "<group>"; };
 		6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHomeViewModel.swift; sourceTree = "<group>"; };
+		6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		6B6BC6922C08B22100D6DF1F /* NetworkLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerDemoApp.swift; sourceTree = "<group>"; };
 		6B6BC6972C08B22100D6DF1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6B6BC6992C08B22300D6DF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B6BC69C2C08B22300D6DF1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6BFA128B2D7B150F004D0F2C /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
+		6BFA128D2D7B163A004D0F2C /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		6BFA12922D7B1C44004D0F2C /* HomeEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEndpoints.swift; sourceTree = "<group>"; };
+		6BFA12942D7B1CE1004D0F2C /* HomeAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,13 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6B0915EF2C0C837A0000C1DA /* SimpleNetworkLayer */ = {
+		6B0915EF2C0C837A0000C1DA /* EFNetworkServices */ = {
 			isa = PBXGroup;
 			children = (
-				6B0915E92C0C5FED0000C1DA /* NetworkService.swift */,
-				6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */,
+				6BFA128D2D7B163A004D0F2C /* APIClientProtocol.swift */,
+				6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */,
+				6BFA128B2D7B150F004D0F2C /* APIModels.swift */,
 			);
-			path = SimpleNetworkLayer;
+			path = EFNetworkServices;
 			sourceTree = "<group>";
 		};
 		6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */ = {
@@ -56,6 +65,7 @@
 			children = (
 				6B0915F12C0C90D60000C1DA /* GNetworkService.swift */,
 				6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */,
+				6B0915ED2C0C60AE0000C1DA /* UserModel.swift */,
 			);
 			path = GenaricNetworkLayer;
 			sourceTree = "<group>";
@@ -81,9 +91,9 @@
 			children = (
 				6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */,
 				6B6BC6972C08B22100D6DF1F /* ContentView.swift */,
-				6B0915ED2C0C60AE0000C1DA /* UserModel.swift */,
+				6BFA12872D7B138D004D0F2C /* Core */,
 				6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */,
-				6B0915EF2C0C837A0000C1DA /* SimpleNetworkLayer */,
+				6B0915EF2C0C837A0000C1DA /* EFNetworkServices */,
 				6B6BC6992C08B22300D6DF1F /* Assets.xcassets */,
 				6B6BC69B2C08B22300D6DF1F /* Preview Content */,
 			);
@@ -96,6 +106,40 @@
 				6B6BC69C2C08B22300D6DF1F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6BFA12872D7B138D004D0F2C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6BFA128F2D7B1BB5004D0F2C /* ExampleHome */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6BFA128F2D7B1BB5004D0F2C /* ExampleHome */ = {
+			isa = PBXGroup;
+			children = (
+				6BFA12912D7B1BFD004D0F2C /* ViewModel */,
+				6BFA12902D7B1BEA004D0F2C /* Network */,
+			);
+			path = ExampleHome;
+			sourceTree = "<group>";
+		};
+		6BFA12902D7B1BEA004D0F2C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6BFA12922D7B1C44004D0F2C /* HomeEndpoints.swift */,
+				6BFA12942D7B1CE1004D0F2C /* HomeAPIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6BFA12912D7B1BFD004D0F2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,12 +213,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */,
-				6B0915EA2C0C5FED0000C1DA /* NetworkService.swift in Sources */,
+				6BFA12932D7B1C44004D0F2C /* HomeEndpoints.swift in Sources */,
 				6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */,
+				6BFA128C2D7B150F004D0F2C /* APIModels.swift in Sources */,
 				6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */,
 				6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */,
+				6BFA12952D7B1CE1004D0F2C /* HomeAPIClient.swift in Sources */,
+				6B1CDF2B2D787CE5001411E0 /* APIEndpoint.swift in Sources */,
 				6B0915EE2C0C60AE0000C1DA /* UserModel.swift in Sources */,
 				6B0915EC2C0C60650000C1DA /* HomeViewModel.swift in Sources */,
+				6BFA128E2D7B163A004D0F2C /* APIClientProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ struct ContentView: View {
         NavigationStack {
             ZStack {
                 Color.white.ignoresSafeArea()
-                List(vm1.users ?? [], id: \.id) { user in
+                List(vm.users ?? [], id: \.id) { user in
                     HStack {
                         AsyncImage(url: URL(string: user.avatarURL ?? "")) { image in
                             image
@@ -44,12 +44,12 @@ struct ContentView: View {
             }
         }
         .onAppear{
-//            vm.fetchDataByCompletion()
+           // vm.fetchDataByPublisher()
 //            vm1.fetchDataByCompletion()
         }
         .task {
-          // await vm.fetchDataByAsync()
-            await vm1.fetchDataByAsync()
+           // await vm.fetchDataByAsync()
+           // await vm1.fetchDataByAsync()
         }
     }
     
