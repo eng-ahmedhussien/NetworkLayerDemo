@@ -53,3 +53,4 @@ struct UserModel: Codable {
         case siteAdmin = "site_admin"
     }
 }
+

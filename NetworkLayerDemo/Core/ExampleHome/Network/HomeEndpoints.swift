@@ -8,22 +8,11 @@
 import Foundation
 
 enum HomeEndpoints: APIEndpoint {
+
     case getUsers
     
     
-    var headers: [String : String]?{
-        switch self {
-        case .getUsers:
-            return nil
-        }
-    }
-    
-    var body: Data?{
-        switch self {
-        case .getUsers:
-            return nil
-        }
-    }
+   
     
     var path: String {
         switch self {
@@ -36,6 +25,19 @@ enum HomeEndpoints: APIEndpoint {
         switch self {
         case .getUsers:
             return .get
+        }
+    }
+    
+    var parameters: [String : Any]?{
+        switch self {
+        case .getUsers:
+            return nil
+        }
+    }
+    
+    var headers: HTTPHeader? {
+        get {
+            return HTTPHeader.empty
         }
     }
     

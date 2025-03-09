@@ -11,20 +11,19 @@ import Combine
 protocol HomeAPIClientProtocol {
     func getUsers() -> AnyPublisher<[UserModel], APIError>
     func getUsers() async throws -> [UserModel]?
-    func getUser(completion: @escaping Handler<UserModel>)
+    func getUser(completion: @escaping Handler<[UserModel]>)
 }
 
-class HomeAPIClient: HomeAPIClientProtocol {
-    let urlSessionAPIClient = URLSessionAPIClient<HomeEndpoints>()
+class HomeAPIClient: URLSessionAPIClient<HomeEndpoints>, HomeAPIClientProtocol {
     func getUsers() -> AnyPublisher<[UserModel], APIError> {
-        return urlSessionAPIClient.request(.getUsers)
+        request(.getUsers)
     }
     
     func getUsers() async throws -> [UserModel]?{
-        return try await urlSessionAPIClient.request(.getUsers)
+        try await request(.getUsers)
     }
     
-    func getUser(completion: @escaping Handler<UserModel>) {
-        urlSessionAPIClient.request(.getUsers, completion: completion)
+    func getUser(completion: @escaping Handler<[UserModel]>) {
+        request(.getUsers, completion: completion)
     }
 }

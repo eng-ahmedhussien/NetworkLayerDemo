@@ -9,7 +9,6 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var vm =  HomeViewModel()
-    @StateObject var vm1 =  GHomeViewModel()
     
     var body: some View {
         NavigationStack {
@@ -48,7 +47,7 @@ struct ContentView: View {
 //            vm1.fetchDataByCompletion()
         }
         .task {
-           // await vm.fetchDataByAsync()
+            await vm.fetchDataByAsync()
            // await vm1.fetchDataByAsync()
         }
     }

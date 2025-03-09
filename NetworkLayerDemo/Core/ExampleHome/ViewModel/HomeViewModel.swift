@@ -46,11 +46,11 @@ class HomeViewModel:ObservableObject{
     }
     
     func fetchDataByCompletion() {
-        apiClient.getUser { data, error in
-            if let data = data {
+        apiClient.getUser { Result in
+            switch Result {
+            case .success(let data):
                 self.users = data
-            } else if let error = error {
-                // Handle error
+            case .failure(let error):
                 print("Data retrieval using completion failed with error: \(error.localizedDescription)")
             }
         }

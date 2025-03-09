@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		6B0915EC2C0C60650000C1DA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */; };
 		6B0915EE2C0C60AE0000C1DA /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915ED2C0C60AE0000C1DA /* UserModel.swift */; };
-		6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F12C0C90D60000C1DA /* GNetworkService.swift */; };
-		6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */; };
 		6B1CDF2B2D787CE5001411E0 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */; };
 		6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */; };
 		6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6BC6972C08B22100D6DF1F /* ContentView.swift */; };
@@ -25,8 +23,6 @@
 /* Begin PBXFileReference section */
 		6B0915EB2C0C60650000C1DA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6B0915ED2C0C60AE0000C1DA /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		6B0915F12C0C90D60000C1DA /* GNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNetworkService.swift; sourceTree = "<group>"; };
-		6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHomeViewModel.swift; sourceTree = "<group>"; };
 		6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		6B6BC6922C08B22100D6DF1F /* NetworkLayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerDemoApp.swift; sourceTree = "<group>"; };
@@ -50,24 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6B0915EF2C0C837A0000C1DA /* EFNetworkServices */ = {
+		6B0915EF2C0C837A0000C1DA /* NetworkServices */ = {
 			isa = PBXGroup;
 			children = (
 				6BFA128D2D7B163A004D0F2C /* APIClientProtocol.swift */,
 				6B1CDF2A2D787CE5001411E0 /* APIEndpoint.swift */,
 				6BFA128B2D7B150F004D0F2C /* APIModels.swift */,
 			);
-			path = EFNetworkServices;
-			sourceTree = "<group>";
-		};
-		6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */ = {
-			isa = PBXGroup;
-			children = (
-				6B0915F12C0C90D60000C1DA /* GNetworkService.swift */,
-				6B0915F32C0C98930000C1DA /* GHomeViewModel.swift */,
-				6B0915ED2C0C60AE0000C1DA /* UserModel.swift */,
-			);
-			path = GenaricNetworkLayer;
+			path = NetworkServices;
 			sourceTree = "<group>";
 		};
 		6B6BC6892C08B22100D6DF1F = {
@@ -92,9 +78,8 @@
 				6B6BC6952C08B22100D6DF1F /* NetworkLayerDemoApp.swift */,
 				6B6BC6972C08B22100D6DF1F /* ContentView.swift */,
 				6BFA12872D7B138D004D0F2C /* Core */,
-				6B0915F02C0C90990000C1DA /* GenaricNetworkLayer */,
-				6B0915EF2C0C837A0000C1DA /* EFNetworkServices */,
-				6B6BC6992C08B22300D6DF1F /* Assets.xcassets */,
+				6B0915EF2C0C837A0000C1DA /* NetworkServices */,
+				6BA341C22D7D930100584CC0 /* Resors */,
 				6B6BC69B2C08B22300D6DF1F /* Preview Content */,
 			);
 			path = NetworkLayerDemo;
@@ -108,6 +93,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		6BA341C12D7D92EE00584CC0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B0915ED2C0C60AE0000C1DA /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6BA341C22D7D930100584CC0 /* Resors */ = {
+			isa = PBXGroup;
+			children = (
+				6B6BC6992C08B22300D6DF1F /* Assets.xcassets */,
+			);
+			path = Resors;
+			sourceTree = "<group>";
+		};
 		6BFA12872D7B138D004D0F2C /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +120,7 @@
 		6BFA128F2D7B1BB5004D0F2C /* ExampleHome */ = {
 			isa = PBXGroup;
 			children = (
+				6BA341C12D7D92EE00584CC0 /* Model */,
 				6BFA12912D7B1BFD004D0F2C /* ViewModel */,
 				6BFA12902D7B1BEA004D0F2C /* Network */,
 			);
@@ -214,9 +216,7 @@
 			files = (
 				6B6BC6982C08B22100D6DF1F /* ContentView.swift in Sources */,
 				6BFA12932D7B1C44004D0F2C /* HomeEndpoints.swift in Sources */,
-				6B0915F22C0C90D60000C1DA /* GNetworkService.swift in Sources */,
 				6BFA128C2D7B150F004D0F2C /* APIModels.swift in Sources */,
-				6B0915F42C0C98930000C1DA /* GHomeViewModel.swift in Sources */,
 				6B6BC6962C08B22100D6DF1F /* NetworkLayerDemoApp.swift in Sources */,
 				6BFA12952D7B1CE1004D0F2C /* HomeAPIClient.swift in Sources */,
 				6B1CDF2B2D787CE5001411E0 /* APIEndpoint.swift in Sources */,
