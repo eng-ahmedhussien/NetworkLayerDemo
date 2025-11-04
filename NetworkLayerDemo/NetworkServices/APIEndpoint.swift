@@ -76,7 +76,7 @@ extension APIEndpoint {
         
         var urlRequest = URLRequest(url: url) // 6
         urlRequest.httpMethod = method.rawValue
-        self.headers?.forEach { urlRequest.addValue($0.value, forHTTPHeaderField: $0.key) }
+        self.headers.forEach { urlRequest.addValue($0.value, forHTTPHeaderField: $0.key) }
         
 //        if let body = body {
 //            do {
